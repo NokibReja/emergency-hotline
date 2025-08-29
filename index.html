@@ -39,12 +39,14 @@
                 Bangladesh</p>
         </section>
         <!-- card section -->
-        <section class="bg-[#f5fff6] p-10 grid grid-cols-4 gap-5">
+        <section class="grid bg-[#f5fff6] p-10 lg:grid-cols-4 sm:grid-cols-2 gap-5">
 
             <!-- card parent -->
-            <article class="grid grid-cols-3 col-span-3 gap-5">
+            <article class="grid lg:grid-cols-3 lg:col-span-3  sm:grid-cols-1 gap-5">
 
-                <!-- All single card here 1 -->
+                <!-- All single card here -->
+
+                 <!-- 1111111 -->
                 <div class="number-card p-5 bg-white rounded-xl shadow-sm">
                     <div class="flex justify-between">
                         <s class="bg-red-200 rounded-xl p-3"><img class="w-[20px]" src="./assets/emergency.png"
@@ -52,8 +54,8 @@
                         <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
                     </div>
                     <h2 class="font-bold text-l mt-2">National Emergency Number</h2>
-                    <p class="text-gray-600">National Emergency</p>
-                    <h2 class="font-bold text-3xl my-3">999</h2>
+                    <p class="service-name text-gray-600">National Emergency</p>
+                    <h2 class="service-number font-bold text-3xl my-3">999</h2>
                     <span class="bg-gray-100 text-gray-700 rounded-3xl text-center px-5 py-2 my-5">All</span>
                     <div class="flex gap-2 mt-5">
                         <button class="copy-btn btn rounded-xl border bg-white p-2 text-gray-600 w-[50%] mx-auto"><i
@@ -208,26 +210,21 @@
             </article>
 
             <!-- aside section -->
-            <aside class="col-span-1 p-5 bg-white rounded-xl shadow-sm">
+            <aside class="lg:col-span-1 sm:grid-cols-1 p-5 bg-white rounded-xl shadow-sm">
                 <div class="flex justify-between mb-10">
                     <div class="flex gap-2">
                         <i class="fa-regular fa-clock mt-1 text-gray-500"></i>
                         <h1 class="font-medium text-l">Call History</h1>
                     </div>
                     <div>
-                        <button class="btn bg-green-600 rounded-3xl text-white p-5">Clear</button>
+                        <button id="btn-clear" class="btn bg-green-600 rounded-3xl text-white p-5">Clear</button>
                     </div>
                 </div>
-                <div class="bg-gray-100 rounded-xl p-5">
-                    <div>
-                        <h2 class="font-semibold text-base mt-2">National Emergency Number</h2>
-                        <p class="text-gray-600">999</p>
-                    </div>
-                    <div>
-                        
-                    </div>
+
+                <div id="call-history-container">
                 </div>
             </aside>
+
         </section>
 
     </main>
