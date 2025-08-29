@@ -22,7 +22,7 @@
             <h1 class="font-extrabold text-l text-green-800 ">Emergency <br> service</h1>
         </div>
         <div class="">
-            <button class="btn bg-green-50 border-0 rounded-full font-bold p-5"><span class="">0</span><img
+            <button class="btn bg-green-50 border-0 rounded-full font-bold p-5"><span id="heart-count">0</span><img
                     class="w-[20px]" src="./assets/heart.png" alt="" srcset=""></button>
             <button class="btn bg-green-50 border-0 mx-3 rounded-full font-bold p-5"><span class="">100</span><img
                     class="w-[20px]" src="./assets/coin.png" alt="" srcset=""></button>
@@ -43,12 +43,13 @@
 
             <!-- card parent -->
             <article class="grid grid-cols-3 col-span-3 gap-5">
+
                 <!-- All single card here -->
                 <div class="number-card p-5 bg-white rounded-xl shadow-sm">
                     <div class="flex justify-between">
                         <s class="bg-red-200 rounded-xl p-3"><img class="w-[20px]" src="./assets/emergency.png"
                                 alt=""></s>
-                        <button class=""><i class="fa-regular fa-heart"></i></button>
+                        <button class="heart-btn"><i class="fa-regular fa-heart"></i></button>
                     </div>
                     <h2 class="font-bold text-l mt-2">National Emergency Number</h2>
                     <p class="text-gray-600">National Emergency</p>
@@ -214,6 +215,7 @@
         </section>
 
     </main>
+    <script src="./home.js"></script>
 </body>
 
 </html>
